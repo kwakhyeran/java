@@ -1,0 +1,11 @@
+package oop.chap07;
+class SuperA{
+	
+}
+
+class SubB extends SuperA{
+	
+}
+public class InheritanceTest03 {
+
+}

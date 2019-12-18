@@ -1,0 +1,28 @@
+package chap09.api.lang;
+
+import java.util.Random;
+
+public class ObjectTest01 {
+
+	public static void main(String[] args) {
+		Object obj1 = new Object();
+		System.out.println(obj1.getClass());
+		System.out.println(obj1.hashCode());
+		System.out.println(obj1.toString()); 
+		System.out.println(obj1); 
+
+		
+		Person p1 = new Person(); //Person 메소드에 새로운 참조변수 p1을 할당
+		
+		System.out.println(p1.getName()+","+p1.getAddr()+","+p1.getAge());
+		
+		System.out.println(p1.toString()); //개발자가 작성하는 모든 클래스에서
+		
+		System.out.println(p1);
+	
+		Random rand = new Random();
+		System.out.println(rand);
+		Date d = new Date();
+	
+	}
+}

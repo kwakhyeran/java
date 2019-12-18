@@ -1,0 +1,11 @@
+package workbook74p;
+
+public class ShapeTest {
+
+	public static void main(String[] args) {
+		Shape[] shape = new Shape[6]; // Shape타입의 객체를 참조할 수 있는 객체 6개를 배열로 생성 
+		System.out.println(shape[0]);
+
+	}
+
+}

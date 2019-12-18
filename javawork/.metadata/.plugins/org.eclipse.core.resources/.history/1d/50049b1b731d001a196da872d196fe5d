@@ -1,0 +1,14 @@
+package oop.chap07.poly;
+
+public class Video extends Content {
+String ganre;
+
+public Video(String title,String ganre) { // 持失切 莫失
+	super(title);
+	this. ganre =  ganre;
+}
+
+
+
+
+}

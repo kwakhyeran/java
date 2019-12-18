@@ -1,0 +1,14 @@
+package chap09.api.lang;
+
+public class StringTest02 {
+
+	public static void main(String[] args) {
+
+		String str1=new String("java programming");
+
+		String str2=new String("Àç¹Õ´Ù.");
+	
+		Sys
+	}
+
+}

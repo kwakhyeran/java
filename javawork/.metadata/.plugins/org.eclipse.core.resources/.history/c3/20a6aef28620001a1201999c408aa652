@@ -1,0 +1,36 @@
+package workbook67p;
+
+public class Calculator {
+	public double plus(int a, int b) {
+	
+		int sum =  a + b;
+		return (double)sum;
+	}
+
+	public double minus(int a, int b) {
+		
+		int sum1 =  a - b;
+		return (double)sum1;
+	}
+
+	
+	public double multiplication(int a, int b) {
+		
+		int sum2 =  a * b;
+		return (double)sum2;
+	}
+
+
+	public double divie(int a, int b) throws Exception{
+		
+		int sum3 =  a / b;
+
+		if (b = 0) {
+			throw new Exception("Exception이 발생했습니다. 다시 입력해주세요.");
+		} 
+	
+		return (double)sum3;
+		
+	}
+
+}

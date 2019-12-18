@@ -1,0 +1,15 @@
+package workbook67p;
+
+public class CalcTest {
+
+	public static void main(String[] args) {
+
+		CalcTest obj = new CalcTest(); // 메소드
+		int num1 = Integer.parseInt(args[0]);
+		int num2 = Integer.parseInt(args[2]);
+		double result = obj.divide(args[0], args[2]);
+		System.out.println("결과 = " + result);
+	}
+
+	
+}

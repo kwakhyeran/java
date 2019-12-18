@@ -1,0 +1,12 @@
+package chap09.api.lang;
+
+public class Person {
+
+	String name;
+	int age;
+	String addr;
+	public Person() {
+		
+	}
+	
+}

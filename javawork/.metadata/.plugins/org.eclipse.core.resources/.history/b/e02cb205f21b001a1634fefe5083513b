@@ -1,0 +1,21 @@
+package company;
+
+import oop.chap6.constructor.MyConstructor;
+
+public class Test02 {
+
+	public static void main(String[] args) {
+		
+				Company com = new Company();
+				com.setSalary("10000");
+				com.setAnnualIncome("10000");
+				com.setAfterTaxAnnualIncome("1234");
+				com.Bonus(1000);
+				com.AfterTaxBonus();
+			
+		
+System.out.println(com.getSalary() + "," + com.AnnualIncome());
+
+	
+}
+}

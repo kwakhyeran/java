@@ -1,0 +1,23 @@
+package workbook60p;
+
+public class Otab extends Moblie {
+
+
+	
+	public Otab() {
+	}
+
+	public Otab(String mobileName, int batterySize, String osType) {
+		super(mobileName, batterySize,osType);
+	}
+
+	public int operate(int time) {
+		batterySize = batterySize-(time * 12);
+		return batterySize;
+	}
+
+	public int charge(int time) {
+		batterySize=batterySize +(time*8) ;
+		return batterySize;
+	}
+}

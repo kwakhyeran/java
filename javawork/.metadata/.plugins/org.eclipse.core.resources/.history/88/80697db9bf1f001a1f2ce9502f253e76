@@ -1,0 +1,28 @@
+package workbook74p;
+
+public class Rectangle extends Shape implements Resize{
+	
+	public Rectangle() {
+		
+	}
+
+	public Rectangle(int width, int height, String colors) {
+		super(width,height,colors);
+		
+	}
+
+	@Override
+	public void setResize(int size) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}	
+	
+	
+}
+

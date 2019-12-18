@@ -1,0 +1,55 @@
+package company;
+
+public class Company {
+
+//멤버변수 선언
+	private double salary;
+	private double annualIncome;
+	private double afterTaxAnnualIncome;
+	private double bonus;
+	private double afterTaxBonus;
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public double getAnnualIncome() {
+		return salary*12;
+	}
+
+	public void setAnnualIncome(double annualIncome) {
+		this.annualIncome = annualIncome;
+	}
+
+	public double getAfterTaxAnnualIncome() {
+		return salary*12*0.9;
+	}
+
+	public void setAfterTaxAnnualIncome(double afterTaxAnnualIncome) {
+		this.afterTaxAnnualIncome = afterTaxAnnualIncome;
+	}
+
+	public double getBonus() {
+		return salary*0.2*12;
+	}
+
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+
+	public double getAfterTaxBonus() {
+		return salary*0.9*0.055;
+	}
+
+	public void setAfterTaxBonus(double afterTaxBonus) {
+		this.afterTaxBonus = afterTaxBonus;
+	}
+
+	public Company(double salary) {
+		this.salary =salary;
+	}
+}

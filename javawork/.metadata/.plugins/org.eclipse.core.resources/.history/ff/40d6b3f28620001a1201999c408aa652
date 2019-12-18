@@ -1,0 +1,17 @@
+package workbook67p;
+
+public class CalcTest {
+
+	public static void main(String[] args) throws Exception {
+
+		double sum3;
+		try {
+			System.out.println("°á°ú :" + sum3);
+
+		} catch (Exception e) {
+
+			System.out.println(e.getMessage());
+
+		}
+	}
+}

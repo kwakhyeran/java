@@ -1,0 +1,14 @@
+package oop.chap07.poly;
+/*
+ * 객체의 타입을 검사하고 작업할 수 있다.
+ * instanceof연산자를 이용
+ * 
+ */
+public class InstanceOfTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

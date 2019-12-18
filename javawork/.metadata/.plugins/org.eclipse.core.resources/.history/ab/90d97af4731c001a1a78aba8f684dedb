@@ -1,0 +1,18 @@
+package company;
+
+public class Test02 {
+
+	public static void main(String[] args) {	
+				Company com = new Company(Double.parseDouble(args[0]));
+				
+				System.out.println("연 기본급합 : "+ com.getAnnualIncome());
+				System.out.println("세후 : "+ com.getAfterTaxAnnualIncome());
+				System.out.println("보너스 : "+ com.getBonus());
+				System.out.println("보너스 세후 : "+ com.getAfterTaxBonus());
+
+				System.out.println("연 지급액: "+ com.getAfterTaxAnnualIncome());
+	
+	}
+	
+
+}

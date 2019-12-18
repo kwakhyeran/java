@@ -1,0 +1,35 @@
+package chap08;
+
+import java.util.Scanner;
+
+// 여러 개의 예외가 발생하는 경우 처리
+// 사용자가 입력하는 값에 따라 예외가 다르게 발생한다.
+//1.사용자가 제대로된 값을 입력 : 예외가 발생x ->catch블럭을 실행되지 않는다.
+//2.사용자가 나눌숫자에 0을 입력
+//	=>ArithmeticException이 발생
+//	=>Exception e =new ArithmeticException();
+//	  ---------			-----------------
+//	   상위타입					하위타입
+//3. 사용자가 숫자가 아니라 문자를 입력
+//	=>InputMismatchException 발생
+//	=>Exception e = new InputMismatchException();
+
+public class ExceptionTest03 {
+	public static void main(String[] args) {
+		Scanner key = new Scanner(System.in);
+
+		try {
+			System.out.println("start");
+			System.out.print("숫자를 입력하세요");
+			int num1 = key.nextInt();
+			System.out.print("나눌숫자를 입력하세요");
+			int num2 = key.nextInt();
+			System.out.println("결과 :" + (num1 / num2));
+		} catch (Exception e) {
+			System.out.println("에외발생");
+			System.out.println("에외메시지 : " + e.getMessage());
+			// e.printStackTrace();
+		}
+
+	}
+}

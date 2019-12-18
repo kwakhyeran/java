@@ -1,0 +1,23 @@
+package oop.chap07.poly;
+
+public class Sender {
+	String name;
+	int length;
+	
+	Sender(String name) {
+		this.name = name;
+	} // 생성자
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void print() {
+
+		System.out.println(length +"로 " +name+ "전송완료");
+	}
+}

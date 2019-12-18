@@ -1,0 +1,6 @@
+
+ackage chap09.api.lang;
+
+public @interface asd {
+
+}

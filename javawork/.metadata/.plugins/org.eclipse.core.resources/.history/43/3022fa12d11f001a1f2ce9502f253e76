@@ -1,0 +1,17 @@
+package workbook77p;
+
+
+public class CarTest {
+
+	public static void main(String[] args) {
+		
+		Car[] ca = new Car[2];
+	
+		ca[0] = new L3("L3","1500" ,50,25,0);
+		ca[1] = new L5("L5","2000" ,70,35,0);
+	}
+	
+	System.out.println("vehicleName"+"engineSize"+"oilTack"+"oilSize"+"distace"+"temperature");
+	
+
+}

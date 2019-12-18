@@ -1,0 +1,12 @@
+package oop.chap6.constructor;
+
+public class MyConstructorTest {
+	public static void main(String[] args){
+	
+	MyConstructor n = new 
+			MyConstructor
+	
+		
+	
+	}
+}

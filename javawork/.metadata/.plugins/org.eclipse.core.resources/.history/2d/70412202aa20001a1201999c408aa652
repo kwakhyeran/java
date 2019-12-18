@@ -1,0 +1,16 @@
+package chap09.api.lang;
+
+public class StringExam {
+
+	public static void main(String[] args) {
+	//str1을 AVAJ로 출력되도록 구현하세요.
+	//단, StringBuffer의 reverse 사용xx
+	//	
+		
+		String str1 = "java";
+		
+	}
+
+}
+
+

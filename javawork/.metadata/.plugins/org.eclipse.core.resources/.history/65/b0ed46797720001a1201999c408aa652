@@ -1,0 +1,58 @@
+package chap08;
+
+public class Account {
+	private static final String  = null;
+	private String account;
+	private int balance;
+	private double interestRate;
+
+	public String getAccount() {
+		return account;
+	}
+
+	public void setAccount(String account) {
+		this.account = account;
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+	public double getInterestRate() {
+		return interestRate;
+	}
+
+	public void setInterestRate(double interestRate) {
+		this.interestRate = interestRate;
+	}
+
+	public double calculateInterest() {
+		return balance * interestRate / 100;
+	}
+
+	public void deposit(double money) throws Exception {
+		int result = 0;
+		if (money < 0) {
+			System.out.println("입금금액이 0보다 적습니다.");
+			result = 0;
+		} else {
+			result = balance + (int)money;
+		}
+	}
+
+	public void withdraw(double money) throws Exception {
+		int result = 0;
+		if (money < 0 || getBalance()<money) {
+			System.out.println("출금금액이 0보다 적거나 현재잔액보다 많습니다.");
+			result = 0;
+		} else {
+			result = balance + (int)money;
+		}
+	}
+
+	
+}

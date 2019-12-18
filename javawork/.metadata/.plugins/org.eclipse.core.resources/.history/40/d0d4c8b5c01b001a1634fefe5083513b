@@ -1,0 +1,27 @@
+package oop.chap6.constructor;
+
+public class MyConstructorTest {
+	public static void main(String[] args){
+	
+	MyConstructor obj = new MyConstructor();
+
+	System.out.println(obj.getName() + "," + obj. getId() + "," obj.getPass());
+	}
+}
+ 
+/*
+
+생성자 [규칙]
+1.생성자 메소드명은 클래스명과 대소문자 까지 정확하기 동일한 이름으로 정의해야한다.
+	=> 
+2. 생성자 메소드를 정의하지 않으면 컴파일러가 기본생성자를 제공한다
+   => 기본생성자 : 매개변수가 없는 생성자
+   => 생성자 메소드를 개발자가 정의하면 컴파일러가 기본생성자를 제공하지 않는다.
+   => 처리되는 일이 없다고 하더라도 무조건 기본생성자는 정의해야 한다.   << 이거중요
+ 
+3. 생성자 메소드도 일반 메소드 처럼 매개변수를 정의하고 외부에서 값을 전달받아 사용할 수 있다.
+   =>주로 객체에 정의된 멤버변수의 값을 초기화하는 작업
+4. 생성자 매소드도 일반 메소드 처럼 오버로딩을 허용한다.
+
+
+*/

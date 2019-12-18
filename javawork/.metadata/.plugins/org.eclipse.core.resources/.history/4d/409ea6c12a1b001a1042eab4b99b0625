@@ -1,0 +1,64 @@
+package WorkBook;
+
+public class Account {
+
+	
+		private String Account; //°èÁÂ¹øÈ£
+		private int balance; //ÀÜ¾×
+		private double rate;    // ÀÌÀ²
+		private int deposit;
+		private int withdraw;
+		
+		public String getAccount() {
+			return Account;
+		}
+		public void setAccount(String account) {
+			Account = account;
+		}
+		public int getBalance() {
+			return balance;
+		}
+		public void setBalance(int balance) {
+			this.balance = balance;
+		}
+		public double getRate() {
+			return rate;
+		}
+		public void setRate(double rate) {
+			this.rate = rate;
+		}
+		public int getDeposit() {
+			return deposit;
+		}
+		public void setDeposit(int deposit) {
+			this.deposit = deposit;
+		}
+		public int getWithdraw() {
+			return withdraw;
+		}
+		public void setWithdraw(int withdraw) {
+			this.withdraw = withdraw;
+		}
+		
+		public int getSum1(){
+			
+			int sum1 = (deposit+balance-withdraw);
+			
+			return sum1;
+			
+		}
+	public double getSum2(){
+			
+	
+			double sum2 = (double)getSum1() * rate;
+			
+			return sum2;
+			
+		}
+	public void print() {
+		System.out.println( "°èÁÂÁ¤º¸ : " + getAccount()+ "ÇöÀçÀÜ¾× : " +getBalance()); 
+		System.out.println( "°èÁÂÁ¤º¸ : " + getAccount()+ "ÇöÀçÀÜ¾× : " +getSum1()); 
+		System.out.println( "ÀÌÀÚ : " + getSum2()); 
+	}
+}
+

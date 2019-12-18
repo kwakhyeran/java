@@ -1,0 +1,37 @@
+package oop.chap09.poly;
+//객체의 형변환
+
+class Parent {
+	String name = "장동건";
+
+	public void display() {
+		System.out.println("부모의 display");
+	}
+}
+
+class Child extends Parent {
+	String name = "이민호";
+
+	public void display() {
+		System.out.println("자식의 display");
+	}
+
+	public void test() {
+		System.out.println("하위클래스에만 정의된 메소드");
+
+	}
+}
+
+public class RefCastingTest {
+	public static void main(String[] args) {
+		System.out.println("1. super타입의 참조변수로 Super객체를 참조");
+		Parent obj1 = new Parent();
+		obj1.display();                      //장동건 출력
+		System.out.println(obj1.name);
+		System.out.println("************************");
+		System.out.println("1. sub타입의 참조변수로 Sub객체를 참조");
+		Parent obj2 = new Parent();
+		obj2.display();            
+	    System.out.println(obj2.name);
+	}
+}

@@ -1,0 +1,25 @@
+package oop.chap07.poly;
+
+public class Tea extends Beverage {
+	public int amount;
+
+	public Tea() {
+	}
+	public Tea(String name, int amount) { // 持失切 莫失
+		super(name);
+		this.amount = amount;
+	}
+
+	public void calcPrice() {
+		if (getName().equals("lemonTea")) {
+			setPrice(1500);
+		}
+		if (getName().equals("ginsengTea")) {
+			setPrice(2000);
+		}
+		if (getName().equals("redginsengTea")) {
+			setPrice(2500);
+		}
+	}
+
+}

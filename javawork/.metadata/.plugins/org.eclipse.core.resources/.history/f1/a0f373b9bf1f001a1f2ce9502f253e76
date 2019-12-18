@@ -1,0 +1,29 @@
+package workbook74p;
+
+public class Triangle extends Shape implements Resize{
+	
+	public Triangle() {
+		
+	}
+
+	public Triangle(int width, int height, String colors) {
+		super(width,height,colors);
+		
+	}
+
+	@Override
+	public void setResize(int size) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}	
+	
+	
+}
+
+
