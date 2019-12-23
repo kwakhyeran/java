@@ -1,7 +1,0 @@
-package workbook77p;
-
-public interface Temp {
-
-	void getTempGage(int temp);
-}
-

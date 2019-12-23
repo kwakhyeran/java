@@ -1,9 +1,0 @@
-package oop.chap06;
-
-public class Snippet {
-	public void print() {
-	System.out.println("성명 : "+ getName()+"나이 : "+ getAge()
-	+"평균 : "+getAvg()+ "학점 :"+getGrade());
-	
-}
-
